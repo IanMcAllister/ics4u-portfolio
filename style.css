@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
 body{
   background: #92a8d1;
   margin: 0px;
+  font-family: karla;
+
 }
 #topBar{
   background: #034f84;
@@ -8,4 +12,7 @@ body{
 #title{
   margin: 0px;
   color: white;
+}
+#intro1{
+  background: #92a8d1;
 }
