@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+</head>
+<body>
+  <div id="topBar"><h1 id= "title">Ian's ICS4U Portfolio</h1></div>
+
+
+
+    input.onGesture(Gesture.TiltLeft, function () {<br>
+    while (input.isGesture(Gesture.TiltLeft)) {<br>
+        sprite.change(LedSpriteProperty.X, -1)<br>
+        sprite.ifOnEdgeBounce()<br>
+        basic.pause(1000)<br>
+    }<br>
+})<br>
+input.onGesture(Gesture.TiltRight, function () {<br>
+    while (input.isGesture(Gesture.TiltRight)) {<br>
+        sprite.change(LedSpriteProperty.X, 1)<br>
+        sprite.ifOnEdgeBounce()<br>
+        basic.pause(1000)<br>
+    }<br>
+})<br>
+input.onGesture(Gesture.ScreenDown, function () {<br>
+    while (input.isGesture(Gesture.ScreenDown)) {<br>
+        sprite.change(LedSpriteProperty.Y, 1)<br>
+        sprite.ifOnEdgeBounce()<br>
+        basic.pause(1000)<br>
+    }<br>
+})<br>
+input.onGesture(Gesture.ScreenUp, function () {<br>
+    while (input.isGesture(Gesture.ScreenUp)) {<br>
+        sprite.change(LedSpriteProperty.Y, -1)<br>
+        sprite.ifOnEdgeBounce()<br>
+        basic.pause(1000)<br>
+    }<br>
+})<br>
+let sprite: game.LedSprite = null <br>
+sprite = game.createSprite(2, 2) <br>
+
+  </body>
+</html>
